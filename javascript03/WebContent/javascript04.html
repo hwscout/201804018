@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload=function() {
+		var number = prompt("홀수와 짝수 입력 : ", "");
+		if(number%2==0)
+			document.getElementById("printDiv").innerHTML = "짝수";
+		else
+			document.getElementById("printDiv").innerHTML = "홀수";
+		
+	}
+
+
+</script>
+</head>
+<body>
+사용자에게 숫자를 입력 받아 홀수와 짝수를 구분하는 프로그램<br>
+
+<div id="printDiv">
+</div>
+</body>
+</html>

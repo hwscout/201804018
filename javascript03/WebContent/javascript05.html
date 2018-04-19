@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload=function() {
+		var kor = prompt("국어 점수 입력 : ", "");
+		var eng = prompt("영어 점수 입력 : ", "");
+		var math = prompt("수학 점수 입력 : ", "");
+		kor = Number(kor);
+		eng = Number(eng);
+		math = Number(math);
+		
+		if((kor+eng+math)/3 >90)
+			document.getElementById("avg").innerHTML = "수";
+		else if((kor+eng+math)/3 >80)
+			document.getElementById("avg").innerHTML = "우";
+		else if((kor+eng+math)/3 >70)
+			document.getElementById("avg").innerHTML = "미";
+		else if((kor+eng+math)/3 >60)
+			document.getElementById("avg").innerHTML = "양";
+		else
+			document.getElementById("avg").innerHTML = "가";
+	}
+
+
+</script>
+</head> 
+<body>
+사용자에게 국어, 영어, 수학 점수를 입력 받아 평균을 구한 뒤 수우미양가를 구분하는 프로그램<br> 
+
+<div id="avg"></div>
+</body>
+</html>
